@@ -10,16 +10,15 @@
 </head>
 <body>
  
-    
-<div class="Dropdown">
-    <ul id="text">
-        <br>
-        <br>
-        <button id="repository1">to repository 1</button>
-        <br><br>
-        <button id="repository2">to repository 2(In progress)</button>
-        <ul>
-</div>
-<script src="script.js"></script>
+<h1 id="test">{{test}}</h1>
+<script src="script.js">
+    Vue.createApp({
+        data() {
+            return {
+                test: "Hi"
+            }
+        }
+    }).mount('#test')
+</script>
 </body>
 </html>
